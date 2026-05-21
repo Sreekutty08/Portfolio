@@ -5,7 +5,7 @@ const Project = () => {
   const projects = [
     {
       title: "Doctor Appointment Booking App",
-      description: "A responsive web application engineered to streamline healthcare scheduling. Features an intuitive dashboard interface allowing patients to seamlessly secure appointments while enabling medical staff to efficiently track and manage real-time queues.",
+      description: "A responsive web application engineered to streamline healthcare scheduling. Features an intuitive dashboard interface allowing patients to seamlessly secure appointments while enabling medical staff to efficiently track and manage real-time queues.A secure, responsive digital health platform engineered to automate patient scheduling, optimize real-time clinical workflows, and bridge the communication gap between healthcare providers and patients through intuitive dashboard interfaces.",
       tags: ["HTML5", "CSS3", "JavaScript", "Responsive UI"],
       liveLink: "#",   // Paste your hosted project deployment URL here
       githubLink: "#", // Paste your GitHub repository URL here
