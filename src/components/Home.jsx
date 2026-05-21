@@ -73,7 +73,7 @@ const Home = () => {
               
               {/* IMPLEMENTED: Image element with defensive scaling attributes */}
               <img 
-                src="images/about.png" 
+                src="images/srilakshmi.png" 
                 alt="Srilakshmi Profile" 
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
               />
