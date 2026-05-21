@@ -4,7 +4,6 @@ import React from "react";
 const projectsList = [
   {
     title: "Doctor Appointment Booking App",
-    // FIX: Removed duplicated text overlay in the description string
     description: "A secure, responsive digital health platform engineered to automate patient scheduling, optimize real-time clinical workflows, and bridge the communication gap between healthcare providers and patients through intuitive dashboard interfaces.",
     tags: ["HTML5", "CSS3", "JavaScript", "Responsive UI"],
     liveLink: "#",   
@@ -14,7 +13,7 @@ const projectsList = [
 
 const Project = () => {
   return (
-    <section className="bg-blue-950 text-slate-100 py-16 md:py-24 px-6 font-sans relative overflow-hidden flex items-center justify-center min-h-[80vh]">
+    <section className="bg-blue-950 text-slate-100  font-sans relative overflow-hidden flex items-center justify-center min-h-[80vh]">
       
       {/* Background Ambience Soft Mesh Glow */}
       <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-red-500/5 rounded-full blur-[130px] pointer-events-none" />
