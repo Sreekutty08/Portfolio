@@ -1,17 +1,18 @@
 import React from "react";
 
-const Project = () => {
-  // A scalable data array makes it easy to add more projects in the future
-  const projects = [
-    {
-      title: "Doctor Appointment Booking App",
-      description: "A responsive web application engineered to streamline healthcare scheduling. Features an intuitive dashboard interface allowing patients to seamlessly secure appointments while enabling medical staff to efficiently track and manage real-time queues.A secure, responsive digital health platform engineered to automate patient scheduling, optimize real-time clinical workflows, and bridge the communication gap between healthcare providers and patients through intuitive dashboard interfaces.",
-      tags: ["HTML5", "CSS3", "JavaScript", "Responsive UI"],
-      liveLink: "#",   // Paste your hosted project deployment URL here
-      githubLink: "#", // Paste your GitHub repository URL here
-    }
-  ];
+// FIX: Moved array outside component to optimize React rendering performance
+const projectsList = [
+  {
+    title: "Doctor Appointment Booking App",
+    // FIX: Removed duplicated text overlay in the description string
+    description: "A secure, responsive digital health platform engineered to automate patient scheduling, optimize real-time clinical workflows, and bridge the communication gap between healthcare providers and patients through intuitive dashboard interfaces.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Responsive UI"],
+    liveLink: "#",   
+    githubLink: "#", 
+  }
+];
 
+const Project = () => {
   return (
     <section className="bg-blue-950 text-slate-100 py-16 md:py-24 px-6 font-sans relative overflow-hidden flex items-center justify-center min-h-[80vh]">
       
@@ -34,10 +35,11 @@ const Project = () => {
 
         {/* Project Grid Map Wrapper */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
-          {projects.map((project, index) => (
+          {projectsList.map((project, index) => (
             <div 
               key={index} 
-              className="group relative overflow-hidden rounded-2xl bg-slade-900/30 border border-slate-900 backdrop-blur-md p-6 md:p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1.5 hover:border-red-500/30 hover:shadow-[0_12px_40px_rgba(239,68,68,0.05)]"
+              // FIX: Changed 'bg-slade-900/30' to 'bg-slate-900/30'
+              className="group relative overflow-hidden rounded-2xl bg-slate-900/30 border border-slate-900 backdrop-blur-md p-6 md:p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1.5 hover:border-red-500/30 hover:shadow-[0_12px_40px_rgba(239,68,68,0.05)]"
             >
               {/* Subtle inner card accent overlay glow */}
               <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-red-500/10 to-purple-500/0 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
