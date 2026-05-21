@@ -2,7 +2,8 @@ import React from "react";
 
 const Education = () => {
   return (
-    <section className="bg-blue-950 text-slate-100 min-h-screen flex items-center justify-center px-6 py-16 md:py-24 font-sans selection:bg-red-500/30">
+    /* OPTIMIZED: Kept min-h-screen and reduced vertical padding for pristine full-screen centering */
+    <section className="bg-blue-950 text-slate-100 min-h-screen flex items-center justify-center px-6 py-12 font-sans selection:bg-red-500/30">
       <div className="max-w-3xl w-full space-y-10">
         
         {/* Header Block */}

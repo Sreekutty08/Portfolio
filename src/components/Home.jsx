@@ -2,7 +2,8 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-blue-950 text-slate-100 px-6 py-20 lg:py-0 font-sans overflow-hidden">
+    /* OPTIMIZED: Preserved min-h-screen and balanced vertical padding to avoid layout compression across display viewports */
+    <section className="relative min-h-screen flex items-center justify-center bg-blue-950 text-slate-100 px-6 py-16 lg:py-12 font-sans overflow-hidden">
       
       {/* Background Ambient Glow Effects */}
       <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-red-500/10 rounded-full blur-[140px] pointer-events-none" />
@@ -71,7 +72,7 @@ const Home = () => {
             {/* Core Image Canvas Layer */}
             <div className="relative w-full h-full rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
               
-              {/* IMPLEMENTED: Image element with defensive scaling attributes */}
+              {/* Image element with defensive scaling attributes */}
               <img 
                 src="images/about.png" 
                 alt="Srilakshmi Profile" 

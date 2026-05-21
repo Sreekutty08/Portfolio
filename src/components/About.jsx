@@ -11,8 +11,8 @@ const About = () => {
   ];
 
   return (
-    /* FIXED: Corrected classNaAme typo and ensured deep blue background */
-    <section className="bg-blue-950 py-20 px-6 font-sans relative overflow-hidden flex items-center justify-center min-h-[90vh]">
+    /* UPDATED: Changed min-h-[90vh] to min-h-screen and optimized padding for perfect vertical center */
+    <section className="bg-blue-950 py-12 px-6 font-sans relative overflow-hidden flex items-center justify-center min-h-screen">
       <div className="max-w-4xl w-full mx-auto">
         
         {/* Dynamic Interactive Card Container */}

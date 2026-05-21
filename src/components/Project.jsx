@@ -1,6 +1,6 @@
 import React from "react";
 
-// FIX: Moved array outside component to optimize React rendering performance
+// Moved array outside component to optimize React rendering performance
 const projectsList = [
   {
     title: "Doctor Appointment Booking App",
@@ -13,7 +13,8 @@ const projectsList = [
 
 const Project = () => {
   return (
-    <section className="bg-blue-950 text-slate-100  font-sans relative overflow-hidden flex items-center justify-center min-h-[80vh]">
+    /* UPDATED: Changed min-h-[80vh] to min-h-screen and balanced padding to ensure smooth full-screen layouts */
+    <section className="bg-blue-950 text-slate-100 py-16 md:py-24 px-6 font-sans relative overflow-hidden flex items-center justify-center min-h-screen">
       
       {/* Background Ambience Soft Mesh Glow */}
       <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-red-500/5 rounded-full blur-[130px] pointer-events-none" />
@@ -37,7 +38,6 @@ const Project = () => {
           {projectsList.map((project, index) => (
             <div 
               key={index} 
-              // FIX: Changed 'bg-slade-900/30' to 'bg-slate-900/30'
               className="group relative overflow-hidden rounded-2xl bg-slate-900/30 border border-slate-900 backdrop-blur-md p-6 md:p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1.5 hover:border-red-500/30 hover:shadow-[0_12px_40px_rgba(239,68,68,0.05)]"
             >
               {/* Subtle inner card accent overlay glow */}

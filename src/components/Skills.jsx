@@ -33,8 +33,8 @@ const Skills = () => {
   ];
 
   return (
-    /* UPDATED: Changed min-h-[60vh] to min-h-screen and adjusted padding for vertical symmetry */
-    <section className="bg-blue-950 text-slate-100  font-sans relative overflow-hidden flex items-center justify-center min-h-screen">
+    /* UPDATED: Preserved min-h-screen and integrated defensive vertical padding to handle scaling gracefully */
+    <section className="bg-blue-950 text-slate-100 py-16 md:py-24 px-6 font-sans relative overflow-hidden flex items-center justify-center min-h-screen">
       
       {/* Background Radial Ambient Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/5 rounded-full blur-[120px] pointer-events-none" />

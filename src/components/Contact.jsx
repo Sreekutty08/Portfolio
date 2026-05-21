@@ -2,7 +2,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="bg-blue-950 text-slate-100 py-20 px-6 font-sans relative overflow-hidden flex items-center justify-center min-h-[80vh]">
+    /* UPDATED: Changed min-h-[80vh] to min-h-screen and scaled padding for optimal vertical alignment */
+    <section className="bg-blue-950 text-slate-100 py-12 px-6 font-sans relative overflow-hidden flex items-center justify-center min-h-screen">
       
       {/* Background Ambient Radial Glow Mesh */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-red-500/5 rounded-full blur-[140px] pointer-events-none" />
@@ -62,36 +63,34 @@ const Contact = () => {
               </div>
 
               {/* Mobile Number Entry Line */}
-<div className="group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 bg-slate-950/40 border border-slate-900 rounded-2xl p-5 hover:border-slate-800 transition-all duration-300">
-  <div className="flex items-center gap-3 min-w-[120px]">
-    
-    {/* Phone Vector Icon */}
-    <svg
-      className="w-5 h-5 text-green-500/70 group-hover:text-green-400 transition-colors"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.09l-4.423-1.106a1.125 1.125 0 00-1.173.417l-.97 1.293a1.125 1.125 0 01-1.21.384 12.035 12.035 0 01-7.143-7.143 1.125 1.125 0 01.384-1.21l1.293-.97a1.125 1.125 0 00.417-1.173L7.962 3.102A1.125 1.125 0 006.872 2.25H5.5A2.25 2.25 0 003.25 4.5v2.25z"
-      />
-    </svg>
+              <div className="group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 bg-slate-950/40 border border-slate-900 rounded-2xl p-5 hover:border-slate-800 transition-all duration-300">
+                <div className="flex items-center gap-3 min-w-[120px]">
+                  {/* Phone Vector Icon */}
+                  <svg
+                    className="w-5 h-5 text-green-500/70 group-hover:text-green-400 transition-colors"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.09l-4.423-1.106a1.125 1.125 0 00-1.173.417l-.97 1.293a1.125 1.125 0 01-1.21.384 12.035 12.035 0 01-7.143-7.143 1.125 1.125 0 01.384-1.21l1.293-.97a1.125 1.125 0 00.417-1.173L7.962 3.102A1.125 1.125 0 006.872 2.25H5.5A2.25 2.25 0 003.25 4.5v2.25z"
+                    />
+                  </svg>
+                  <span className="text-slate-300 font-bold text-sm tracking-wide uppercase">
+                    Phone
+                  </span>
+                </div>
 
-    <span className="text-slate-300 font-bold text-sm tracking-wide uppercase">
-      Phone
-    </span>
-  </div>
-
-  <a
-    href="tel:+918089501511"
-    className="text-slate-300 text-base md:text-lg hover:text-green-400 transition duration-200"
-  >
-    +91 80895 01511
-  </a>
-</div>
+                <a
+                  href="tel:+918089501511"
+                  className="text-slate-300 text-base md:text-lg hover:text-green-400 transition duration-200"
+                >
+                  +91 80895 01511
+                </a>
+              </div>
 
               {/* Location Entry Line */}
               <div className="group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 bg-slate-950/40 border border-slate-900 rounded-2xl p-5 hover:border-slate-800 transition-all duration-300">
